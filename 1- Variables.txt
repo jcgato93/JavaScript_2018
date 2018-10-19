@@ -1,0 +1,36 @@
+Aunque todas las variables de JavaScript se crean de la misma forma 
+(mediante la palabra reservada var), 
+la forma en la que se les asigna un valor depende del tipo de valor 
+que se quiere almacenar (números, textos, etc.)
+
+
+Numéricas 
+    var iva = 16; // variable tipo entero
+    var total = 234.65;  // variable tipo decimal
+
+
+Cadenas de textos
+    var mensaje = "Bienvenido a nuestro sitio web";
+    var nombreProducto = 'Producto ABC';
+    var letraSeleccionada = 'c';
+
+
+    /* El contenido de texto1 tiene comillas simples, por lo que
+        se encierra con comillas dobles */
+    var texto1 = "Una frase con 'comillas simples' dentro";
+    
+    /* El contenido de texto2 tiene comillas dobles, por lo que
+        se encierra con comillas simples */
+    var texto2 = 'Una frase con "comillas dobles" dentro';
+
+
+
+Arrays
+
+    var dias = ["Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado", "Domingo"];
+
+
+Boolean 
+
+    var pregunta = True;
+    pregunta = False;
