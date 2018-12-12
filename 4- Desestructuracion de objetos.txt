@@ -1,0 +1,2 @@
+Es una forma de acceder a los atributos de los objetos que es la
+desestructurazion de los mismos.
