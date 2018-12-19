@@ -1,0 +1,6 @@
+ While se ejecuta únicamente mientras la condición que se está evaluando es verdadera.
+
+
+    while(condición) {
+        // Este código se va a ejecutar siempre a menos que la condicion cambie
+    }
