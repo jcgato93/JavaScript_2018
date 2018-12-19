@@ -1,0 +1,13 @@
+El método map() itera 
+sobre los elementos de un array en el orden de inserción y 
+devuelve array nuevo con los elementos modificados.
+
+
+
+var personasModificadas = personas.map(x=> x.altura * 100)
+
+console.log(personasModificadas) // solo mostrara el array de numeros resultantes sin que se alteraran los datos originales
+
+
+
+
