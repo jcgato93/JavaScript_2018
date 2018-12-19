@@ -1,0 +1,31 @@
+Estructura de control se llama switch. 
+
+Switch se utiliza para realizar diferentes acciones basadas en múltiples condiciones.
+
+es igual a colocar multiples if 
+
+            if() {}
+            if() {}
+            if() {}
+            if() {}
+
+con la diferencia que con el switch no entra a evaluar cada uno , sino unicamente el que corresponde
+como verdadero 
+
+        var edad = 19
+
+
+        switch (edad >= 18 ) {
+            case true:
+                console.log('mayor a 18')
+                break;
+
+            case false:
+            console.log('menor a 18')
+                break;
+
+            default:
+            console.error('mensaje por defecto si no se cumple ninguna de las condiciones')
+                break;
+        }
+    
