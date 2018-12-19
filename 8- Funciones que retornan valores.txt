@@ -1,0 +1,10 @@
+Una forma de reutilización de codigo son las funciones 
+que retornan un valor o que incluso llegan a retornar 
+otra funcion
+
+
+para denotar el tipo de valor que retorna una funcion
+
+    function nameFunction (){
+        return true <--  valor que retornara
+    }
