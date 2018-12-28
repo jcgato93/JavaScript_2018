@@ -1,0 +1,36 @@
+Los prototipos son un conjunto de normas para integrar 
+Programación Orientada a Objetos en JavaScript. Entonces,
+siguiendo estas reglas nosotros debemos ser capaces de crear las distintas metodologías de la Orientación a Objetos:
+
+Herencia
+Encapsulamiento
+Abstracción
+Polimorfismo
+
+
+Por supuesto, no todas la metodologías están disponibles.
+
+
+para definir un prototipo , simplemente se crea una funcion que reciba los parametros como si fuera
+un constructor
+
+
+function Persona(nombre, apellido, altura){
+	this.nombre = nombre
+	this.apellido = apellido
+	this.altura = altura
+}
+
+para hacer referencia a los atributos del objeto persona se utiliza this
+y cuando se instancia el prototipo de persona , este retorna this
+
+
+Si queremos crear los metodos pertenecientes a la "clase"/prototipo  Persona
+seria de la siguiente manera
+
+    Persona.prototype.soyAlto = function (){
+        this.altura > 1.8 ? console.log(`${this.nombre} es alto`) : console.log(`${this.nombre} es bajo`)
+    }
+
+    
+     
