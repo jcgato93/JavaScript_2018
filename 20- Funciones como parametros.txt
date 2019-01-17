@@ -1,0 +1,34 @@
+En JavaScript, los parámetros de funciones 
+son por defecto undefined. De todos modos, 
+en algunas situaciones puede ser útil colocar un 
+valor por defecto diferente que lo evalúe como verdadero.
+
+
+
+     / ==================   Funciones como parametro ============================
+
+    function responderSaludo(nombre, apellido, esDev){
+        console.log(`Buen día ${nombre} ${apellido}`)
+
+        if(esDev){
+            console.log(`no sabía que eras desarrollador/a`)
+        }
+    }
+
+
+    saludar(fn){  <-- fn es la funcion que se para por parametro
+        console.log(`Hola mi nombre es ${this.nombre} ${this.apellido} y soy desarrollador`)
+
+        var {nombre , apellido} = this
+        
+        if (fn != undefined) {
+            fn(nombre,apellido, true)
+        }
+    }
+
+
+
+    // implementacion
+    saludar(responderSaludo)
+
+   
