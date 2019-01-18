@@ -1,0 +1,46 @@
+Una Promise (promesa en castellano) es un objeto que representa la terminación o el fracaso 
+eventual de una operación asíncrona. Una promesa puede ser creada usando su constructor. 
+Sin embargo, la mayoría de la gente son consumidores de promesas ya creadas devueltas 
+desde funciones.   ref = https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Usar_promesas
+
+
+
+Las promesas tienen tres estados:
+
+- pending  
+    cuando se crea una promesa este sera el primer estado
+
+
+- fullfilled
+    Si la promesa se resuelve exitosamente pasara al estado de fullfilled
+    para obtener el valor que retorna la promesa se utiliza el metodo then()
+
+     .then(val => {})
+
+
+- rejected
+    si ocurre algun error pasara a este estado
+    para obtener el valor que retorna el error se utiliza el metodo catch()
+
+     .catch(err=>{})
+
+
+
+ Cómo crear una promesa ? 
+
+    new Promise(function(resolve,reject)){
+        ...
+    })
+
+se le pasan dos parametros que deben ser dos funciones.
+ 
+resolve se ejecutara si todo sale bien
+reject se ejecutara si se presenta algun error
+
+ejemplo de uso completo
+
+new Promise(function(resolve,reject)){
+        ...
+    })
+    .then(val => {})
+    .catch(err=>{})
