@@ -1,0 +1,31 @@
+Async-await es la manera más simple y clara de realizar tareas asíncronas. 
+Await detiene la ejecución del programa hasta que todas las promesas 
+sean resueltas. Para poder utilizar esta forma, hay que colocar async antes 
+de la definición de la función, y encerrar el llamado a Promises.all() 
+dentro de un bloque try … catch.
+
+
+        async function obtenerPersonajes(){
+
+            var ids= [1,2,3,4,5,6,7] // <-- array de id de personajes
+            
+            // Retorna un array de promesas
+            var promesas = ids.map(function(id){
+                return obtenerPersonaje(id)
+            })
+
+            // Se debe contener dentro de un try{...}catch
+            try {
+                
+                var personajes = await Promise.all(promesas) // <-- Cuando todas las promesas se resuelvan , se guardaran en una variable
+
+                console.table(personajes)
+
+            } catch (id) {
+                console.log('Se presento un error')
+            }
+            
+        }
+
+
+        obtenerPersonajes();
