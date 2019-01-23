@@ -1,0 +1,41 @@
+Un closure o clausura es la combinación de una función y el 
+ámbito léxico en el que se declaró dicha función. 
+Es decir los closures o clausuras son funciones que 
+manejan variables independientes. En otras palabras, 
+la función definida en el closure "recuerda" el ámbito 
+en el que se ha creado.
+
+
+    function inicia() {
+        var nombre = "Mozilla"; // 'nombre' es una variable local creada por la función 'inicia'
+            function muestraNombre() { // 'muestraNombre' es una función interna (un closure)
+                alert(nombre); // dentro de esta función usamos una variable declarada en la función padre
+            }
+        muestraNombre();
+    }
+
+    inicia();  
+
+
+La función inicia()  crea una variable local llamada nombre, 
+a continuación, define una función denominada muestraNombre(). 
+muestraNombre() es una función interna (un closure) definida dentro 
+de inicia(), y sólo está disponible en el cuerpo de esa función. 
+muestraNombre() no tiene ninguna variable propia, lo que hace es 
+reutilizar la variable nombre declarada en la función externa.   
+
+
+
+otro ejemplo seria 
+
+    function creaSumador(x) {
+    return function(y) {
+        return x + y;
+    };
+    }
+
+    var suma5 = creaSumador(5);
+    var suma10 = creaSumador(10);
+
+    console.log(suma5(2));  // muestra 7
+    console.log(suma10(2)); // muestra 12 
